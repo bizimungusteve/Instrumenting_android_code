@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="12.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>40</y>
+      <w>450</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+pji.spoon.methods::Method
+--
+--
+~checkMethod(CtMethod&lt;?&gt; method): boolean
+~processMethod(CtMethod&lt;?&gt; method): void
+~findMethod(Set&lt;CtMethod&lt;?&gt;&gt; setMethod): CtMethod&lt;?&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>370</x>
+      <y>210</y>
+      <w>310</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>/pji.spoon.methods::OnEventHandler/
+--
+-simpleName: String
+-interfaceQualifiedName: String
+--
++OnEventHandler(String simpleName, String interfaceQualifiedName): ctor
++checkMethod(CtMethod&lt;?&gt; method): boolean
++processMethod(CtMethod&lt;?&gt; method): void
++checkInterfaceOf(CtMethod&lt;?&gt; method): boolean
++findMethod(Set&lt;CtMethod&lt;?&gt;&gt; setMethods): CtMethod&lt;?&gt;
++checkStrategy(CtMethod&lt;?&gt; method): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>440</y>
+      <w>350</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>pji.spoon.methods::OnClickHandler
+--
+-tf: TypeFactory
+--
++OnClickHandler(): ctor
++checkMethod(CtMethod&lt;?&gt; method): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>260</y>
+      <w>230</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;180;60;50;210;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>400</x>
+      <y>130</y>
+      <w>102</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;80;60;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>320</x>
+      <y>580</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>pji.spoon.methods::OnContextClickHandler
+--
+--
++OnContextClickHandler(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>310</x>
+      <y>310</y>
+      <w>102</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;270;60;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>450</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>pji.spoon.methods::OnDragHandler
+--
+--
++OnDragHandler(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>380</x>
+      <y>360</y>
+      <w>102</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;30;60;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>580</x>
+      <y>550</y>
+      <w>300</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>pji.spoon.methods::OnLongClickHandler
+--
+--
++OnLongClickHandler(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>520</x>
+      <y>340</y>
+      <w>102</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;50;60;50;60;230</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>790</x>
+      <y>200</y>
+      <w>330</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>/pji.spoon.methods::ViewsOnEventHandler/
+--
+-methodName: String
+-methodSignature: String
+--
++ViewsOnEventHandler(String methodName, String signature): ctor
++checkMethod(CtMethod&lt;?&gt; method): boolean
++processMethod(CtMethod&lt;?&gt; method): void
++findMethod(Set&lt;CtMethod&lt;?&gt;&gt; setMethods): CtMethod&lt;?&gt;
+-checkStrategy(CtMethod&lt;?&gt; methode): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>770</x>
+      <y>130</y>
+      <w>102</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;30;60;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>830</x>
+      <y>430</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>pji.spoon.methods::ViewsOnTouchHandler
+--
+--
++ViewsOnTouchHandler(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>850</x>
+      <y>350</y>
+      <w>102</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-
+_Link_</panel_attributes>
+    <additional_attributes>60;30;60;80</additional_attributes>
+  </element>
+</diagram>

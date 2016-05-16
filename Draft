@@ -1,0 +1,5 @@
+Verifier quue les methodes recuper sont les boones 
+- verfifier par la  signature 
+-vérifier par nom  
+-verifier par l'interface à la quelle la methode appartient 
+choix : exppliquer  pourqoi les classes abstraites ,EventHandler et ViewEventHandler , qi  paraissent faire les obsration n'ont pas été factorisée dans un même classe abstraite.
