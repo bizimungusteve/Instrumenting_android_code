@@ -37,7 +37,10 @@ public class Starter {
 			this.launcher.addProcessor(processor);
 		}
 	}
-	
+	/**
+	 * Add a method to the list of methods we want to detect with spoon
+	 * @param meth
+	 */
 	public void addMethod(Method meth){
 		this.methodList.add(meth);
 	}
@@ -93,6 +96,7 @@ public class Starter {
 		starter.addMethod(new OnScrollChangeHandler());
 		starter.addMethod(new OnSystemUiVisibilityChangeHandler());
 		starter.addMethod(new ViewsOnTouchHandler());
+	
 		
 		
 		//Adding a processor 

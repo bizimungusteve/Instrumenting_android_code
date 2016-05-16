@@ -169,44 +169,22 @@ _Link_</panel_attributes>
     <additional_attributes>60;30;60;200</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>850</x>
-      <y>150</y>
-      <w>330</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>/pji.spoon.methods::ViewsOnEventHandler/
---
--methodName: String
--methodSignature: String
---
-+ViewsOnEventHandler(String methodName, String signature): ctor
-+checkMethod(CtMethod&lt;?&gt; method): boolean
-+processMethod(CtMethod&lt;?&gt; method): void
-+findMethod(Set&lt;CtMethod&lt;?&gt;&gt; setMethods): CtMethod&lt;?&gt;
--checkStrategy(CtMethod&lt;?&gt; methode): boolean
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>790</x>
-      <y>20</y>
+      <y>30</y>
       <w>142</w>
-      <h>150</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=-
 _Link_</panel_attributes>
-    <additional_attributes>30;50;100;50;100;130</additional_attributes>
+    <additional_attributes>30;50;100;50;100;120</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>880</x>
-      <y>450</y>
+      <x>870</x>
+      <y>340</y>
       <w>310</w>
       <h>70</h>
     </coordinates>
@@ -222,7 +200,7 @@ _Link_</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>900</x>
-      <y>300</y>
+      <y>190</y>
       <w>102</w>
       <h>170</h>
     </coordinates>
@@ -272,5 +250,21 @@ _Link_</panel_attributes>
     <panel_attributes>lt=-
 _Link_</panel_attributes>
     <additional_attributes>60;130;60;50;140;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>150</y>
+      <w>490</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/pji.spoon.methods::ViewsOnEventHandler/
+--
+--
++ViewsOnEventHandler(String simpleName, String signature): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
