@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="key_text_size"
+        android:defaultValue="@integer/textSizeDefaultValue"
+        android:entries="@array/textSizeValueEntries"
+        android:entryValues="@array/textSizeValues"
+        android:summary="@string/text_size_summary"
+        android:title="@string/text_size" />
+
+    <CheckBoxPreference
+        android:key="key_auto_scroll"
+        android:defaultValue="false"
+        android:summary="@string/display_list_autoscroll"
+        android:title="@string/enable_autoscroll"/>
+
+</PreferenceScreen>

@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_key_custom_timeout_setting"
+        android:title="@string/custom_timeout">
+        <CheckBoxPreference
+            android:key="@string/key_enable_custom_timeout"
+            android:title="@string/enable_custom_timeouts" />
+        <ListPreference
+            android:key="@string/key_connection_timeout"
+            android:defaultValue="@integer/connectionTimeoutDefaultValue"
+            android:dependency="@string/key_enable_custom_timeout"
+            android:entries="@array/socketValueEntries"
+            android:entryValues="@array/socketValues"
+            android:summary="@string/connection_timeout_summary"
+            android:title="@string/connection_timeout" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/connection_profile">
+
+        <EditTextPreference
+            android:key="@string/key_host"
+            android:title="@string/url_hint"
+            android:summary="@string/url_hint"
+            android:defaultValue="@string/host_default_value"
+            android:inputType="textUri" />
+
+        <EditTextPreference
+            android:key="@string/key_port"
+            android:title="@string/port"
+            android:summary="@string/port"
+            android:defaultValue="@string/port_default_value"
+            android:inputType="number" />
+
+        <CheckBoxPreference
+            android:key="@string/key_ssl_use"
+            android:title="@string/connection_profile_ssl_use"
+            android:summary="@string/connection_profile_ssl_summary"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/key_userid"
+            android:title="@string/connection_userid"
+            android:summary="@string/userid_default_value"
+            android:defaultValue="@string/userid_default_value"
+            android:inputType="textNoSuggestions" />
+
+        <EditTextPreference
+            android:key="@string/key_password"
+            android:title="@string/connection_password"
+            android:summary="@string/password_default_value"
+            android:defaultValue="@string/password_default_value"
+            android:inputType="textVisiblePassword" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

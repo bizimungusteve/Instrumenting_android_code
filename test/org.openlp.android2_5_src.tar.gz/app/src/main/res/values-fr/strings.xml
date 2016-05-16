@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="about_display_4">Copyright</string>
+  <string name="about_display_5">Copyright partiel</string>
+  <string name="about_display_6">Licence</string>
+  <string name="action_settings">Paramètres</string>
+  <string name="action_about">A propos de</string>
+  <string name="action_alert">Alerte</string>
+  <string name="action_back">Arrière</string>
+  <string name="action_preferences">Préférences</string>
+  <string name="action_refresh">Rafraîchir</string>
+  <string name="action_search">Recherche</string>
+  <string name="app_name">OpenLP</string>
+  <string name="cancel">Annuler</string>
+  <string name="connection_timeout">Délai de connexion</string>
+  <string name="connection_timeout_summary">Sélectionnez une valeur (millisecondes)</string>
+  <string name="display_blank_summary">Sélectionnez le type vide requis</string>
+  <string name="enable_custom_timeouts">Activer le délai personnalisé</string>
+  <string name="home">Accueil</string>
+  <string name="none">Rien</string>
+  <string name="port">Port</string>
+  <string name="text_size_summary">Modifier la taille du texte du service</string>
+  <string name="title_activity_settings">Paramètres</string>
+  <string name="url_hint">Nom d\'hôte ou IP</string>
+</resources>

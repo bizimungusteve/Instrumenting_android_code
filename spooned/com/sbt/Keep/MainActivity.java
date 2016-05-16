@@ -65,7 +65,12 @@ public class MainActivity extends android.app.Activity {
         addButtonOthers.setOnClickListener(new android.view.View.OnClickListener() {
             @java.lang.Override
             public void onClick(android.view.View arg0) {
-                /* you can add code here */;
+                /*
+************************
+ 
+*you can add code here*
+ 
+***********************/;
                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(context);
                 android.view.LayoutInflater li = android.view.LayoutInflater.from(context);
                 android.view.View promptsView = li.inflate(com.sbt.Keep.R.layout.prompt, null);

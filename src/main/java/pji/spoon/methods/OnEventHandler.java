@@ -39,7 +39,10 @@ public abstract class OnEventHandler implements Method {
 		CtBlock<?> block = method.getBody();
 		if (!(block == null)){
 			Factory factory = method.getFactory();
-			block.insertBegin(factory.Code().createCodeSnippetStatement("/* you can add code here */"));
+			block.insertBegin(factory.Code().createCodeSnippetStatement("/*"
+					+ "\n************************\n"
+					+ " \n*you can add code here*\n"
+					+ " \n***********************/"));
 		System.out.println(method.getDeclaringType().getQualifiedName());	
 		System.out.println(method.getSignature());	
 		System.out.println(block.toString());

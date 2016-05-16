@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/historyView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/priceText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:listitem="@android:layout/simple_list_item_checked" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGrid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TableLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/addButton1"
+                android:text="買餸" />
+
+            <Button
+                android:id="@+id/addButton2"
+                android:text="街市" />
+
+            <Button
+                android:id="@+id/addButton3"
+                android:text="家品" />
+            <Button
+                android:id="@+id/addButtonOthers"
+                android:text="未定義" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/addButton5"
+                android:text="百佳" />
+
+            <Button
+                android:id="@+id/addButton6"
+                android:text="759" />
+
+            <Button
+                android:id="@+id/addButton7"
+                android:text="AEON" />
+
+            <Button
+                android:id="@+id/addButton8"
+                android:text="惠康" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/addButton9"
+                android:text="早餐" />
+
+            <Button
+                android:id="@+id/addButton10"
+                android:text="午餐" />
+
+            <Button
+                android:id="@+id/addButton11"
+                android:text="下午茶" />
+
+            <Button
+                android:id="@+id/addButton12"
+                android:text="晚餐" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

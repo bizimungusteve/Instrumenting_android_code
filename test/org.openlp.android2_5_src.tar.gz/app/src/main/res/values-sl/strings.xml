@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="about_display_6">Licenca</string>
+  <string name="action_settings">Nastavitve</string>
+  <string name="action_alert">Opozorilo</string>
+  <string name="action_refresh">Osveži</string>
+  <string name="action_search">Išči</string>
+  <string name="app_name">OpenLP</string>
+  <string name="cancel">Prekliči</string>
+  <string name="port">Port</string>
+  <string name="title_activity_settings">Nastavitve</string>
+  <string name="url_hint">Hostname ali IP</string>
+</resources>

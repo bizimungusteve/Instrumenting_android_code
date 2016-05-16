@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="about_display_4">著作権</string>
+  <string name="about_display_5">追加の著作権</string>
+  <string name="about_display_6">ライセンス</string>
+  <string name="action_settings">設定</string>
+  <string name="action_about">情報</string>
+  <string name="action_alert">警告</string>
+  <string name="action_back">戻る</string>
+  <string name="action_preferences">設定</string>
+  <string name="action_refresh">再読込</string>
+  <string name="action_search">検索</string>
+  <string name="app_name">OpenLP</string>
+  <string name="cancel">キャンセル</string>
+  <string name="connection_timeout">接続タイムアウト</string>
+  <string name="connection_timeout_summary">値を選択 (ミリ秒)</string>
+  <string name="display_blank_summary">ブランクの種類を選択してください</string>
+  <string name="enable_custom_timeouts">任意のタイムアウトを有効にする</string>
+  <string name="home">ホーム</string>
+  <string name="none">無し</string>
+  <string name="port">ポート</string>
+  <string name="text_size_summary">礼拝テキストの大きさを変更します</string>
+  <string name="title_activity_settings">設定</string>
+  <string name="url_hint">ホスト名またはIPアドレス</string>
+</resources>

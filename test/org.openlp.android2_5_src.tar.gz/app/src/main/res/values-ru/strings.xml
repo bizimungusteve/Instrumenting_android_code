@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="about_display_1">OpenLP является бесплатным церковным программным обеспечением для презентаций</string>
+  <string name="about_display_2">Чтобы узнать больше, посетите веб-сайт OpenLP</string>
+  <string name="about_display_4">Авторские права</string>
+  <string name="about_display_5">Portions copyright</string>
+  <string name="about_display_6">Лицензия</string>
+  <string name="about_display_7">Эта программа является свободным программным обеспечением; Вы можете распространять и / или изменять его в соответствии с условиями GNU General Public License, опубликованной Фондом свободного программного обеспечения, версия 2 Лицензии</string>
+  <string name="about_display_8">Эта программа распространяется в надежде, что она будет полезной, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНЫХ ЦЕЛЕЙ</string>
+  <string name="action_settings">Параметры</string>
+  <string name="action_about">О програме</string>
+  <string name="action_alert">Оповещение</string>
+  <string name="action_back">Черный</string>
+  <string name="action_blank">Переключите экран</string>
+  <string name="action_preferences">Настройки</string>
+  <string name="action_refresh">Обновить</string>
+  <string name="action_search">Поиск</string>
+  <string name="app_name">OpenLP</string>
+  <string name="cancel">Отмена</string>
+  <string name="connection_configuration">Настроить сеть</string>
+  <string name="connection_password">Пароль</string>
+  <string name="connection_profile">Параметры сервера</string>
+  <string name="connection_profile_ssl_use">Использовать HTTPS</string>
+  <string name="connection_profile_ssl_summary">Укажите, следует ли использовать HTTPS</string>
+  <string name="connection_timeout">Время ожидания соединения</string>
+  <string name="connection_timeout_summary">Выберите значение (в миллисекундах)</string>
+  <string name="custom_timeout">Установить пользовательский тайм-аут</string>
+  <string name="display_blank_summary">Выберите нужный тип блокировки</string>
+  <string name="display_desktop">Показать рабочий стол</string>
+  <string name="display_reset">Сбросить дисплей</string>
+  <string name="display_screen">Очистить дисплей (черный)</string>
+  <string name="display_theme">Очистить контент дисплея</string>
+  <string name="enable_custom_timeouts">Включить пользовательские тайм-ауты</string>
+  <string name="enter_alert_text">Введите текст оповещения</string>
+  <string name="home">Домой</string>
+  <string name="none">Ничего</string>
+  <string name="port">Порт</string>
+  <string name="process">Выполнение</string>
+  <string name="service_list">Список служения</string>
+  <string name="stage_view">Вид сцены</string>
+
+  <string name="text_size">Выберите размер текста</string>
+  <string name="text_size_summary">Изменить размер текста Служения</string>
+  <string name="title_activity_settings">Параметры</string>
+  <string name="url_hint">Имя хоста или IP</string>
+  <string name="unable">Невозможно выполнить запрос - проверьте настройки сети</string>
+</resources>

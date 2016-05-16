@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="about_display_4">Derecho di outor</string>
+  <string name="about_display_6">Lisensia</string>
+  <string name="action_settings">Konfigurashon</string>
+  <string name="action_about">Informashon</string>
+  <string name="action_alert">Aviso</string>
+  <string name="action_preferences">Preferensia</string>
+  <string name="action_search">Buska</string>
+  <string name="app_name">OpenLP</string>
+  <string name="display_blank_summary">Selekta e tipo blanko nesesario</string>
+  <string name="enable_custom_timeouts">Permití Timeout adaptá</string>
+  <string name="none">Niun</string>
+  <string name="port">Port</string>
+  <string name="title_activity_settings">Konfigurashon</string>
+  <string name="url_hint">Hostname òf IP</string>
+</resources>

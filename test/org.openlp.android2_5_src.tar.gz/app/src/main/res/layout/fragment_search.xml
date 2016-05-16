@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Plugin"
+                android:id="@+id/search_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40px"
+                android:height="70px"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_spinner"
+                android:layout_weight="0.4"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Search Text"
+                android:textSize="40px"
+                android:height="70px"
+                android:id="@+id/search_value_desc"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+            <EditText
+                android:imeOptions="actionSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_text"
+                style="@android:style/Animation.InputMethod"
+                android:layout_weight="0.87"
+                android:inputType="text"
+                android:textSize="40px"
+                android:height="70px"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/searchlistView"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="40px"
+                android:height="70px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

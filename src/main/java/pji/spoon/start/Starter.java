@@ -60,9 +60,9 @@ public class Starter {
 		
 		final Launcher launcher = new Launcher();
 		Starter starter = new Starter(launcher);
-		final String[]  arguments2= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/test/OpenGL/HelloOpenGLES10"};
-		final String[]  arguments1= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/test/OpenGL/HelloOpenGLES20"};
-		final String[]  arguments= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/test/keep"};
+		final String[]  arguments2= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/pji-instrumenting-androidcode/test/OpenGL/HelloOpenGLES10"};
+		final String[]  arguments1= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/pji-instrumenting-androidcode/test/OpenGL/HelloOpenGLES20"};
+		final String[]  arguments= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/pji-instrumenting-androidcode/test/keep"};
 		
 	    //  final CtCodeSnippetStatement statementInConstructor = getFactory().Code().createCodeSnippetStatement("this.dates = dates");
 	//	OnLongClickProcessor olp =new OnLongClickProcessor();

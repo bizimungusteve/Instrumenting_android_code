@@ -1,0 +1,13 @@
+<resources>
+    <string name="key_auto_scroll">key_auto_scroll</string>
+    <string name="key_enable_custom_timeout">key_enable_custom_timeout</string>
+    <string name="key_connection_timeout">key_connection_timeout</string>
+    <string name="key_text_size">key_text_size</string>
+    <string name="key_host">key_host</string>
+    <string name="key_port">key_port</string>
+    <string name="key_userid">key_userid</string>
+    <string name="key_password">key_password</string>
+    <string name="key_shared_preferences">key_shared_preferences</string>
+	<string name="key_ssl_use">key_ssl_use</string>
+
+</resources>
