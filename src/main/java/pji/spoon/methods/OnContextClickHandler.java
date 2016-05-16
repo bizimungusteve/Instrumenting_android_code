@@ -2,10 +2,10 @@ package pji.spoon.methods;
 
 
 
-public class OnContextClickHandler extends OnEventHandler {
+public class OnContextClickHandler extends ItfOnEventHandler {
 	
 	public OnContextClickHandler(){
-		super("onContextClick","android.view.View.OnContextClickListener") ;
+		super("onContextClick","boolean onContextClick(android.view.View)","android.view.View.OnContextClickListener");
 	}
 
 }

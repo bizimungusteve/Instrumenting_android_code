@@ -10,10 +10,10 @@ import spoon.reflect.declaration.CtType;
 import spoon.reflect.factory.TypeFactory;
 import spoon.reflect.reference.CtTypeReference;
 
-public class OnClickHandler extends OnEventHandler {
+public class OnClickHandler extends ItfOnEventHandler {
 private TypeFactory tf;
 	public OnClickHandler(){
-		super("onClick" ,"android.view.View$OnClickListener") ;
+		super("onClick" ,"void onClick(android.view.View)","android.view.View$OnClickListener") ;
 	//	this.tf = new TypeFactory();
 	}
 	

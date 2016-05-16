@@ -65,7 +65,7 @@ private String methodSignature ;
 		return (methode) ;
 		}
 
-	private boolean checkStrategy(CtMethod<?> methode) {
+	public boolean checkStrategy(CtMethod<?> methode) {
 		// TODO Auto-generated method stub
 		return checkMethod(methode);
 	}

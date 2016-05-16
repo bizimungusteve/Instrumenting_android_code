@@ -18,29 +18,45 @@ import spoon.reflect.declaration.CtElement;
 public class Starter {
 
 	private Launcher launcher;
+	private List<Method> methodList ;
 	
-	/*
-	private List<Method> methList = new ArrayList<Method>() ;
-	private AbstractProcessor<CtType<?>> processor ;
-	public Starter(AbstractProcessor<CtType<?>> processor){
-		this.processor = processor ;
-	}*/
-	
-	public void AddLaunncher(Launcher launcher){
+	public Starter(Launcher launcher){
 		this.launcher = launcher;
-		
+		this.methodList = new ArrayList<Method>();
 	}
-	/*
-	public void AddProcessor(Processor<T extends CtElement> processor){
+	
+	
+	
+	/**
+	 * Add a processor to the the Launcher of this starter
+	 * @param processor
+	 */
+	
+	public void addProcessor(AbstractProcessor <CtType<?>> processor){
 		if(!this.launcher.equals(null)){
 			this.launcher.addProcessor(processor);
 		}
-	}*/
+	}
+	
+	public void addMethod(Method meth){
+		this.methodList.add(meth);
+	}
+	
+	public void run (String[] arguments){
+		this.launcher.run(arguments);
+	}
+	
+	public List<Method> getListMethods(){
+		return this.methodList;
+		
+	}
 	public static void main(String[] args) {
+		
 		System.out.println("starter\n");
 		// TODO Auto-generated method stub
 		
 		final Launcher launcher = new Launcher();
+		Starter starter = new Starter(launcher);
 		final String[]  arguments2= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/test/OpenGL/HelloOpenGLES10"};
 		final String[]  arguments1= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/test/OpenGL/HelloOpenGLES20"};
 		final String[]  arguments= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/test/keep"};
@@ -58,27 +74,35 @@ public class Starter {
 		
 		//launcher.addProcessor(new MethodsInViewProcessor(methode));
 //launcher.addProcessor(new EventHandlersProcessor());
-		List<Method> methList = new ArrayList<Method>() ;
-	Method onclickmeth = new OnClickHandler();
-	methList.add(onclickmeth);
-	Method onKeymeth = new OnKeyHandler();
-	methList.add(onKeymeth);
-	Method onLayoutChange = new OnLayoutChangeHandler();
-	methList.add(onLayoutChange);
-	Method onLongClickmeth = new OnLongClickHandler();
-	methList.add(onLongClickmeth);
-	Method onScrollChangemeth = new OnScrollChangeHandler();
-	methList.add(onScrollChangemeth);
-	Method viewsOnTouchmeth = new ViewsOnTouchHandler();
-	methList.add(viewsOnTouchmeth);
 	//launcher.addProcessor(new MethodsInViewProcessor(onclickmeth));
 //	launcher.addProcessor(new InterfaceListenerProcessor(onclickmeth));
 	
-	launcher.addProcessor(new OnEventMethodHandlersProcessor(methList));
-	//launcher.run(arguments);
-	launcher.run(arguments1);
-	//launcher.run(arguments2);
-System.out.println("starter done\n");
+		/*----------------------------------------------------------*/
+		
+		//Adding Methods to detectect in the starter
+		starter.addMethod(new OnClickHandler());
+		starter.addMethod(new OnContextClickHandler());
+		starter.addMethod(new OnDragHandler());
+		starter.addMethod(new OnFocusChangeHandler());
+		starter.addMethod(new OnGenericMotionHandler());
+		starter.addMethod(new OnHoverHandler());
+		starter.addMethod(new OnKeyHandler());
+		starter.addMethod(new OnKeyUpHandler());
+		starter.addMethod(new OnLayoutChangeHandler());
+		starter.addMethod(new OnLongClickHandler());
+		starter.addMethod(new OnScrollChangeHandler());
+		starter.addMethod(new OnSystemUiVisibilityChangeHandler());
+		starter.addMethod(new ViewsOnTouchHandler());
+		
+		
+		//Adding a processor 
+		starter.addProcessor(new ViewProcessor());
+		starter.addProcessor(new OnEventMethodHandlersProcessor(starter.getListMethods()));
+	
+	// runing 
+		starter.run(arguments);
+	
+		System.out.println("starter done\n");
 
 	}
 

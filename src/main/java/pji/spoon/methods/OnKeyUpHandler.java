@@ -1,9 +1,9 @@
 package pji.spoon.methods;
 
-public class OnKeyUpHandler extends OnEventHandler {
+public class OnKeyUpHandler extends ItfOnEventHandler {
 
 	public OnKeyUpHandler() {
-		super("onKeyUp","android.view.KeyEvent.Callback");
+		super("onKeyUp","boolean onKeyUp(int,android.view.KeyEvent event)","android.view.KeyEvent.Callback");
 		// TODO Auto-generated constructor stub
 	}
 

@@ -10,6 +10,7 @@ public class AddButtonClickListener implements android.view.View.OnClickListener
 
     @java.lang.Override
     public void onClick(android.view.View v) {
+        /* you can add code here */;
         final android.widget.EditText priceText = ((android.widget.EditText)(getActivity().findViewById(com.sbt.Keep.R.id.priceText)));
         final android.text.Editable text = priceText.getText();
         if ((text.length()) > 0) {

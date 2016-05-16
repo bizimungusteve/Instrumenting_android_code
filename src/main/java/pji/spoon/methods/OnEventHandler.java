@@ -11,30 +11,35 @@ import spoon.reflect.declaration.CtInterface;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.reference.CtTypeReference;
+import spoon.reflect.factory.*;
 
 public abstract class OnEventHandler implements Method {
 
 	private String simpleName ;
-	private String interfaceQualifiedName ;
+	private String signature;
+	
 	//TODO usefull to check ---private String interfaceName ;
 	
-	public OnEventHandler(String simpleName,String interfaceQualifiedName){
+	public OnEventHandler(String simpleName,String signature){
 		this.simpleName = simpleName ;
-		this.interfaceQualifiedName =interfaceQualifiedName ;
+		this.signature = signature ;
 		
 		
 		//TODO initialise an Inntreface Name this.interfaceName = interfaceName; 
 	}
 	public boolean checkMethod(CtMethod<?> method){
-	return (method.getSimpleName().equals(this.simpleName));
+	return (method.getSimpleName().equals(this.simpleName)) && method.getSignature().equals(signature);
 	}
 /** Access or modify a spoon's CtMethod   
  * @param method The spoon's CtMethod to process  
  */
 	public void processMethod(CtMethod<?> method){
 		if (!(method == null)){
+			
 		CtBlock<?> block = method.getBody();
 		if (!(block == null)){
+			Factory factory = method.getFactory();
+			block.insertBegin(factory.Code().createCodeSnippetStatement("/* you can add code here */"));
 		System.out.println(method.getDeclaringType().getQualifiedName());	
 		System.out.println(method.getSignature());	
 		System.out.println(block.toString());
@@ -43,32 +48,11 @@ public abstract class OnEventHandler implements Method {
 	}
 	
 	
-public boolean checkInterfaceOf(CtMethod<?> method){
-	System.out.println("Debug Checking interfaces of "+method.getSimpleName());
-	boolean find = false;	
-	if (method != null){
-		Set <CtTypeReference<?>> supIntfc = method.getDeclaringType().getSuperInterfaces();
+	public void addCodeInMethodBlock(String code){
 		
-		Iterator<CtTypeReference<?>> it =supIntfc.iterator();
-		//boolean find = false;
-		while(it.hasNext() && !find){
-			CtTypeReference<?> typr = it.next() ;
-		//	CtType<?> typ = typr.getDeclaration() ;
-			System.out.println(typr.getSimpleName());
-			if ((typr != null)){
-				
-			if(typr.getQualifiedName().equals(this.interfaceQualifiedName)){
-				find = true ;
-			//TODO 	System.out.println("true");
-			}}
-			
-		}
 		
-		//boolean rep1 = method.getDeclaringType().isSubtypeOf(method.getFactory().Type().createArrayReference("android.view.View.OnClickListener"));
-		}
-		return  find ;
+	}
 	
-}
 	
 	public CtMethod<?> findMethod(Set<CtMethod<?>> setMethods){
 	//	System.out.println(element.getQualifiedName()+"\n");
@@ -96,6 +80,6 @@ public boolean checkInterfaceOf(CtMethod<?> method){
 	}
 	
 	public boolean checkStrategy(CtMethod<?>method){
-		return checkMethod(method) &&checkInterfaceOf(method) ;
+		return checkMethod(method)  ;
 	}
 }
