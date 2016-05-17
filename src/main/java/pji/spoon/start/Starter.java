@@ -58,31 +58,22 @@ public class Starter {
 		System.out.println("starter\n");
 		// TODO Auto-generated method stub
 		
+		//The spoon Launcher
+		
 		final Launcher launcher = new Launcher();
+		
 		Starter starter = new Starter(launcher);
+		
+		//The arguments
+		
 		final String[]  arguments2= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/pji-instrumenting-androidcode/test/OpenGL/HelloOpenGLES10"};
 		final String[]  arguments1= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/pji-instrumenting-androidcode/test/OpenGL/HelloOpenGLES20"};
 		final String[]  arguments= {"-x","-i","/home/bizimungu/workspace/m1/s2/pji/ws/pji-instrumenting-androidcode/test/keep"};
 		
-	    //  final CtCodeSnippetStatement statementInConstructor = getFactory().Code().createCodeSnippetStatement("this.dates = dates");
-	//	OnLongClickProcessor olp =new OnLongClickProcessor();
+			/*----------------------------------------------------------*/
 		
-		//launcher.addProcessor(olp);		
-
-//launcher.addProcessor(new OnclickProcessor());
-		
-//Handy for test_______!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	//launcher.addProcessor(new ViewProcessor());	
-
-		
-		//launcher.addProcessor(new MethodsInViewProcessor(methode));
-//launcher.addProcessor(new EventHandlersProcessor());
-	//launcher.addProcessor(new MethodsInViewProcessor(onclickmeth));
-//	launcher.addProcessor(new InterfaceListenerProcessor(onclickmeth));
+		//Adding Methods to be detected in the starter
 	
-		/*----------------------------------------------------------*/
-		
-		//Adding Methods to detectect in the starter
 		starter.addMethod(new OnClickHandler());
 		starter.addMethod(new OnContextClickHandler());
 		starter.addMethod(new OnDragHandler());
@@ -100,10 +91,10 @@ public class Starter {
 		
 		
 		//Adding a processor 
-		starter.addProcessor(new ViewProcessor());
+		starter.addProcessor(new TypeProcessor());
 		starter.addProcessor(new OnEventMethodHandlersProcessor(starter.getListMethods()));
 	
-	// runing 
+		// runing 
 		starter.run(arguments);
 	
 		System.out.println("starter done\n");

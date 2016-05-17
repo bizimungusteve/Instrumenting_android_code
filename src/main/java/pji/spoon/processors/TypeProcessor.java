@@ -34,31 +34,18 @@ import android.view.View;
  *Detect all the classes in a project and displays all the methods  
  *This processor is used for debug 
  */
-public class ViewProcessor extends AbstractProcessor<CtType<?>> {
+public class TypeProcessor extends AbstractProcessor<CtType<?>> {
 
 	@Override
 	public void process(CtType<?> element) {
 		// TODO Auto-generated method stub
-		//get A list of all onclick methodes
-		//CTMethode listOnClickListenerMethodes= element.getMethodsByName("setOnClickListener)
-	//	System.out.println("----------------------------i have detected a View\n");
-	//	System.out.println("ViewName :"+element.getQualifiedName()+"\n");
-		
-		//get all the methodes named SetOnclickListener of this View
-	/*	CtPackage pkg= element.getPackage();
-		if(pkg.equals(null)){
-			System.out.println("null");
-		}else {
-		System.out.println(pkg.getSimpleName());
-		}*/
-		//Get all Methods
 	//	System.out.println("***Methods\n");
-		System.out.println("+type"+element.getQualifiedName()+"_______________________________");
+		System.out.println("type => "+" "+element.getQualifiedName()+"_______________________________\n");
 		if(element.isSubtypeOf(getFactory().Type().createReference("android.view.View"))){
 		System.out.println("//is sub type of view...");
 		}
 		Set<CtMethod<?>> allmeth = element.getAllMethods();
-		//System.out.println("....Methods...");
+		System.out.println("  -> Methods in this type.....");
 		
 		// From A set of metho
 		

@@ -34,7 +34,7 @@ public class MethodsInViewProcessor extends AbstractProcessor<CtType<View>>{
 	@Override
 	public void process(CtType<View> element) {
 		// TODO Auto-generated method stub
-	
+	System.out.println("\n ||||||||||||||");
 
 		Set<CtMethod<?>> allmeths = element.getAllMethods();   	
 		CtMethod<?> method = this.method.findMethod(allmeths);

@@ -25,6 +25,7 @@ public class OnEventMethodHandlersProcessor extends AbstractProcessor<CtType<?>>
 	@Override
 	public void process(CtType<?> element) {
 		// TODO Auto-generated method stub
+		//System.out.println("\n searching for methods ....");
 		//System.out.println("searching for methods in-> "+element.getQualifiedName());
 		Set<CtMethod<?>> allmeths = element.getAllMethods() ;
 		if(allmeths != null){
