@@ -4,6 +4,17 @@ The objective of this project is to collect runtime metrics during the execution
 To collect metrics we will apply source code instrumentation (using Spoon [2]). 
 The instrumentation will collect information in relevant points of the code of the apps, for example when users interact with apps (click a button, type text, etc).
 
+
+This repository contains: 
+
+*the source of the project in /src
+*the javadoc /doc
+*Somme android apps used for test in /test
+*an uml diagram for the architecture /uml 
+*a file short desrciption in (french) of the chosen disign in /rapport  
+ 
+ You can run it on your own application .
+ 
 Running the project in eclipse environement: 
 There are some modification to perfom in class "starter" :
 
