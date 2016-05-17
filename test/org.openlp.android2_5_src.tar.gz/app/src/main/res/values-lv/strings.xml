@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources>
-  <string name="action_settings">Iestatījumi</string>
-  <string name="app_name">OpenLP</string>
-  <string name="connection_timeout">Savienojuma laika beigas</string>
-  <string name="connection_timeout_summary">Izvēlieties vērtību (milisekundes)</string>
-  <string name="title_activity_settings">Iestatījumi</string>
-</resources>

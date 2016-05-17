@@ -1,9 +1,0 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-           android:id="@+id/about_text"
-           android:layout_width="fill_parent"
-           android:layout_height="fill_parent"
-           android:background="#000000"
-           android:gravity="center"
-           android:linksClickable="true"
-           android:padding="32dp"
-    android:textColor="#ffffffff" />
